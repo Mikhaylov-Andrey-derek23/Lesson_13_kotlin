@@ -7,25 +7,20 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 class ThirdActivity: AppCompatActivity() {
-    private var btnNavigationFirstScreen: Button? = null
-    private var btnNavigationSecondScreen: Button? = null
+    private var btnHome: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.actyvity_third)
-        btnNavigationSecondScreen = findViewById(R.id.btnNavigationSecondScreen)
-        btnNavigationFirstScreen = findViewById(R.id.btnNavigationFirstScreen)
+        btnHome = findViewById(R.id.btnHome)
         setOnclickListernes()
     }
 
     private  fun setOnclickListernes(){
-        btnNavigationFirstScreen?.setOnClickListener {
+        btnHome?.setOnClickListener {
             val intent = Intent(this, MainActivity:: class.java)
             startActivity(intent)
         }
-        btnNavigationSecondScreen?.setOnClickListener{
-            val intent = Intent(this, SecondActivity:: class.java)
-            startActivity(intent)
-        }
+
     }
 }

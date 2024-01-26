@@ -12,7 +12,7 @@
         android:id="@+id/testScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Third Screen"
+        android:text="Third activity"
         android:textSize= "50sp"
         android:textStyle="italic"
         app:layout_constraintVertical_bias="0.23"
@@ -22,22 +22,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnNavigationSecondScreen"
+        android:id="@+id/btnHome"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Second screen"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
-
-    <Button
-        android:id="@+id/btnNavigationFirstScreen"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="First screen"
-        app:layout_constraintVertical_bias="0.57"
+        android:text="Home"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"

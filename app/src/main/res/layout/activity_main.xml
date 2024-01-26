@@ -6,26 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-
-    <TextView
-        android:id="@+id/testScreen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="First Screen"
-        android:textSize= "50sp"
-        android:textStyle="italic"
-        app:layout_constraintVertical_bias="0.23"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
-        android:id="@+id/btnNavigationSecondScreen"
+        android:id="@+id/btnFirstActivity"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Second screen"
+        android:text="first activity"
+        app:layout_constraintVertical_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -33,11 +19,22 @@
         />
 
     <Button
-        android:id="@+id/btnNavigationThirdScreen"
+        android:id="@+id/btnSecondActivity"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Third screen"
+        android:text="second activity"
         app:layout_constraintVertical_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <Button
+        android:id="@+id/btnThirdActivity"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="third activity"
+        app:layout_constraintVertical_bias="0.67"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
